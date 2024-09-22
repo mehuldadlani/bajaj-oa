@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import JsonInput from './components/JsonInput';
 import ResponseDisplay from './components/ResponseDisplay';
 import styles from './App.module.css';
+import { FaDownload, FaMobileAlt } from 'react-icons/fa';
 
 function App() {
   const [response, setResponse] = useState(null);
