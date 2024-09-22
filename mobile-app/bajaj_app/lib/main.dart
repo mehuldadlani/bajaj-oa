@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
     try {
       final jsonData = json.decode(_controller.text);
       final response = await http.post(
-        Uri.parse('YOUR_BACKEND_URL/bfhl'),
+        Uri.parse('https://bajaj-oa-pied.vercel.app/bfhl'),
         headers: {'Content-Type': 'application/json'},
         body: json.encode(jsonData),
       );
@@ -96,23 +96,21 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 16),
               Wrap(
                 spacing: 8,
-                children: [
-                  'Alphabets',
-                  'Numbers',
-                  'Highest lowercase alphabet'
-                ].map((option) => FilterChip(
-                  label: Text(option),
-                  selected: _selectedOptions.contains(option),
-                  onSelected: (selected) {
-                    setState(() {
-                      if (selected) {
-                        _selectedOptions.add(option);
-                      } else {
-                        _selectedOptions.remove(option);
-                      }
-                    });
-                  },
-                )).toList(),
+                children: ['Alphabets', 'Numbers', 'Highest lowercase alphabet']
+                    .map((option) => FilterChip(
+                          label: Text(option),
+                          selected: _selectedOptions.contains(option),
+                          onSelected: (selected) {
+                            setState(() {
+                              if (selected) {
+                                _selectedOptions.add(option);
+                              } else {
+                                _selectedOptions.remove(option);
+                              }
+                            });
+                          },
+                        ))
+                    .toList(),
               ).animate().fadeIn(),
               SizedBox(height: 16),
               Card(

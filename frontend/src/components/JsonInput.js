@@ -11,7 +11,7 @@ const JsonInput = ({ setResponse }) => {
     setError('');
     try {
       const parsedInput = JSON.parse(input);
-      const res = await axios.post('YOUR_BACKEND_URL/bfhl', parsedInput);
+      const res = await axios.post('https://bajaj-oa-pied.vercel.app/bfhl', parsedInput);
       setResponse(res.data);
     } catch (err) {
       setError(err.message);
