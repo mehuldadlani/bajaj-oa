@@ -29,7 +29,7 @@ function App() {
         {response && <ResponseDisplay response={response} />}
       </main>
       <footer className={styles.footer}>
-        <p>© 2023 Bajaj Finserv Health. All rights reserved.</p>
+        <p>© 2024 Mehul Dadlani. All rights reserved.</p>
       </footer>
     </div>
   );
