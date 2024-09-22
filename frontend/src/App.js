@@ -8,23 +8,28 @@ function App() {
 
   const apkDownloadUrl = "https://drive.google.com/file/d/1cp5A-JKkrhaX009NG5OFnkVxSm7_6ist/view?usp=sharing";
 
-  return (
+ return (
     <div className={styles.app}>
-      <h1 className={styles.title}>Bajaj Finserv Health Dev Challenge</h1>
-      <div className={styles.container}>
-        <JsonInput setResponse={setResponse} />
-        {response && <ResponseDisplay response={response} />}
-      </div>
-      <div className={styles.downloadContainer}>
+      <header className={styles.header}>
+        <h1 className={styles.title}>Bajaj Finserv Health Dev Challenge</h1>
         <a 
           href={apkDownloadUrl} 
           target="_blank" 
           rel="noopener noreferrer" 
           className={styles.downloadButton}
         >
-          Download Mobile App
+          <FaDownload className={styles.icon} />
+          <span>Download App</span>
+          <FaMobileAlt className={styles.icon} />
         </a>
-      </div>
+      </header>
+      <main className={styles.container}>
+        <JsonInput setResponse={setResponse} />
+        {response && <ResponseDisplay response={response} />}
+      </main>
+      <footer className={styles.footer}>
+        <p>© 2023 Bajaj Finserv Health. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
