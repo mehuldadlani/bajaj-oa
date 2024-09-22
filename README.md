@@ -10,7 +10,6 @@
   <a href="#mobile-app">Mobile App</a> •
   <a href="#installation">Installation</a> •
   <a href="#technologies">Technologies</a> •
-  <a href="#contributors">Contributors</a>
 </p>
 
 ## Backend
@@ -24,7 +23,8 @@ Our RESTful API, built with Node.js and Express.js, efficiently processes input 
 
 <details>
 <summary>View Backend Screenshot</summary>
-<img src="./assets/backend/backend_screenshot.png" alt="Backend Screenshot">
+<img src="./assets/backend/backend_screenshot_1.png" alt="Backend Screenshot">
+<img src="./assets/backend/backend_screenshot_2.png" alt="Backend Screenshot">
 </details>
 
 ## Frontend
@@ -39,7 +39,7 @@ A responsive web application built with React.js, allowing users to input data, 
 
 <details>
 <summary>View Frontend Screenshot</summary>
-<img src="./assets/frontend/frontend_screenshot.png" alt="Frontend Screenshot">
+<img src="./assets/frontend/frontend_screenshot_1.png" alt="Frontend Screenshot">
 </details>
 
 ## Mobile App
@@ -55,9 +55,7 @@ Our Flutter-based mobile app provides a seamless, on-the-go experience with func
 <details>
 <summary>View Mobile App Screenshots</summary>
 <p float="left">
-  <img src="./assets/mobile-app/mobile_screenshot1.png" width="200" />
-  <img src="./assets/mobile-app/mobile_screenshot2.png" width="200" /> 
-  <img src="./assets/mobile-app/mobile_screenshot3.png" width="200" />
+  <img src="./assets/mobile-app/mobile_app_screenshot_1.png" width="200" />
 </p>
 </details>
 
