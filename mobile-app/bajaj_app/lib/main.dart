@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
     try {
       final jsonData = json.decode(_controller.text);
       final response = await http.post(
-        Uri.parse('https://bajaj-oa-pied.vercel.app/bfhl'),
+        Uri.parse('https://bajaj-oa-pied.vercel.app/api/bfhl'),
         headers: {'Content-Type': 'application/json'},
         body: json.encode(jsonData),
       );
