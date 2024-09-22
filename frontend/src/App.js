@@ -7,7 +7,7 @@ import { FaDownload, FaMobileAlt } from 'react-icons/fa';
 function App() {
   const [response, setResponse] = useState(null);
 
-  const apkDownloadUrl = "https://drive.google.com/file/d/1cp5A-JKkrhaX009NG5OFnkVxSm7_6ist/view?usp=sharing";
+  const apkDownloadUrl = "https://drive.google.com/file/d/1t6rDfc1si52oBtBfIizjvtFsJVFG8T9U/view?usp=sharing";
 
  return (
     <div className={styles.app}>
