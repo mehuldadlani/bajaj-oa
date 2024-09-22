@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .textarea {
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    outline: none;
+  }
+  
+  .button {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  .button:active {
+    transform: scale(0.98);
+  }
+  
+  .error {
+    color: #e74c3c;
+    margin-top: 10px;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  @keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+  }
